@@ -36,27 +36,28 @@
 </head>
 
 <body class="bg-primary overflow-x-hidden">
-    <nav class="fixed z-30 left-0 top-1/2 -translate-y-1/2 h-4/6  flex justify-between  flex-col  text-center">
-        <a class="page-scroll p-4 -translate-x-96 bg-slate-800 font-comfortaa list rounded-r-md hover:scale-105 hover:bg-secondary transition-all duration-100  text-primary"
+    <div
+        class="nav fixed  pointer-events-none  z-40  left-0 top-1/2 -translate-y-1/2 h-4/6  flex justify-between  flex-col  text-center">
+        <a class="page-scroll relative p-4 -translate-x-96 bg-slate-800 font-comfortaa list rounded-r-md  hover:bg-secondary transition-all duration-100  text-primary"
             href=".couple"><i class="fas fa-ring"></i> Pasangan</a>
 
-        <a class="page-scroll p-4 bg-slate-800 font-comfortaa -translate-x-96 list rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
+        <a class="page-scroll relative  p-4 bg-slate-800 font-comfortaa -translate-x-96 list rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
             href=".waktu"><i class="far fa-calendar"></i> Pelaksanaan</a>
 
-        <a class="page-scroll p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
+        <a class="page-scroll relative  p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
             href=".lokasi"><i class="fas fa-map-marker-alt"></i> Lokasi</a>
 
-        <a class="page-scroll p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
+        <a class="page-scroll relative p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
             href=".cerita"><i class="fab fa-gratipay"></i> Cerita Kami</a>
 
-        <a class="page-scroll p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
+        <a class="page-scroll relative  p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
             href=".galeri"><i class="fas fa-images"></i> Galeri</a>
 
-        <a class="page-scroll p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
+        <a class="page-scroll relative  p-4 bg-slate-800 font-comfortaa list -translate-x-96 rounded-r-md text-primary hover:scale-105 hover:bg-secondary transition-all duration-100"
             href=".pesan"><i class="fas fa-envelope"></i> Pesan dan Kesan</a>
 
 
-    </nav>
+    </div>
     <div class="fixed z-50 cover bottom-0 p-2 top-0 left-0 right-0 bg-slate-800">
 
         <h1 data-aos="fade-up" data-aos-duration="800"
@@ -68,9 +69,9 @@
             class="w-11/12 mx-auto -my-2 relative text-3xl">
             <img class="text-center" src="img/elemen-1.png" alt="">
             <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-komponen">
-                <h2 class="text-2xl text-center font-satisfy">Fulan</h2>
-                <h2 class="text-2xl text-center font-satisfy">&</h2>
-                <h2 class="text-2xl text-center font-satisfy">Fulanah</h2>
+                <h2 class="text-2xl text-center font-satisfy overflow-hidden">Fulan</h2>
+                <h2 class="text-2xl text-center font-satisfy overflow-hidden">&</h2>
+                <h2 class="text-2xl text-center font-satisfy overflow-hidden">Fulanah</h2>
             </div>
         </div>
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
@@ -231,7 +232,8 @@
                         <h2 class="ikon"><i class="transition-all duration-75 fas fa-angle-down"></i></h2>
                     </div>
                     <div class="collapse-value transition-all duration-100 p-0 max-h-0">
-                        <img src="img/story-1.jpg" alt="" class="w-11/12 mx-auto rounded-md mb-3 shadow-xl">
+                        <img src="img/story-1.jpg" alt=""
+                            class="w-11/12 mx-auto rounded-md mb-3 shadow-xl transition-all duration-75">
                         <h2 class="text-justify font-comfortaa text-sm">
                             <span
                                 class="block w-5/12 mb-5 text-center rounded-lg p-2 bg-slate-800 font-semibold text-xl font-comfortaa">2019</span>Lorem
@@ -250,10 +252,11 @@
                     <div
                         class="collapse w-full p-4 text-lg font-concert rounded-t-lg overflow-hidden flex justify-between hover:bg-slate-800 cursor-pointer">
                         <h2>Saling Mengenal</h2>
-                        <h2><i class="ikon transition-all duration-75 fas fa-angle-down"></i></h2>
+                        <h2 class=""><i class="ikon transition-all duration-75 fas fa-angle-down"></i></h2>
                     </div>
                     <div class="collapse-value transition-all duration-100 p-0 max-h-0">
-                        <img src="img/story-1.jpg" alt="" class="w-11/12 mx-auto rounded-md mb-3 shadow-xl">
+                        <img src="img/story-1.jpg" alt=""
+                            class="w-11/12 mx-auto rounded-md mb-3 shadow-xl transition-all duration-75">
                         <h2 class="text-justify font-comfortaa text-sm">
                             <span
                                 class="block w-5/12 text-center mb-5 rounded-lg p-2 bg-slate-800 font-semibold text-xl font-comfortaa">2019</span>
@@ -276,7 +279,8 @@
                         <h2><i class="ikon transition-all duration-75 fas fa-angle-down"></i></h2>
                     </div>
                     <div class="collapse-value transition-all duration-100 p-0 max-h-0">
-                        <img src="img/story-2.jpg" alt="" class="w-11/12 mx-auto rounded-md mb-3 shadow-xl">
+                        <img src="img/story-2.jpg" alt=""
+                            class="w-11/12 mx-auto rounded-md mb-3 shadow-xl transition-all duration-75">
                         <h2 class="text-justify font-comfortaa text-sm">
                             <span
                                 class="block w-5/12 text-center mb-5 rounded-lg p-2 bg-slate-800 font-semibold text-xl font-comfortaa">2019</span>Lorem

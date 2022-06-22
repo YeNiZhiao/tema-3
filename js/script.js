@@ -14,6 +14,7 @@ $(document).ready(function () {
             $(".burger-button").on("click", function () {
                 $(".burger").toggleClass("fa-times")
                 $(".burger").toggleClass("fa-bars")
+                $(".nav").toggleClass("pointer-events-none")
                 $(".list").each(function (i) {
                     setTimeout(function () {
                         $(".list").eq(i).toggleClass("-translate-x-96")

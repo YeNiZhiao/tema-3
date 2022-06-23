@@ -10,18 +10,24 @@ $(document).ready(function () {
         preConfirm: (nama) => {
             $(".nama").html(nama);
             AOS.init();
+            var buka = document.querySelector(".buka");
+            buka.addEventListener("click", function () {
+                $(".cover").addClass("hilang");
+                $('.fade-left').addClass("oke");
+                // $("#player").get(0).play();
+                // document.getElementById('player').muted = false;
+            })
             // burger
             $(".burger-button").on("click", function () {
-                $(".burger").toggleClass("fa-times")
-                $(".burger").toggleClass("fa-bars")
-                $(".nav").toggleClass("pointer-events-none")
+
                 $(".list").each(function (i) {
                     setTimeout(function () {
                         $(".list").eq(i).toggleClass("-translate-x-96")
                     }, 250 * (i + 1))
-
-
                 })
+                $(".burger").toggleClass("fa-times")
+                $(".burger").toggleClass("fa-bars")
+                $(".nav").toggleClass("pointer-events-none")
             })
             // save the date
             $(".simpan").on("click", function () {
@@ -54,9 +60,10 @@ $(document).ready(function () {
                 e.preventDefault();
             });
 
+
         }
-    });
+    })
+});
 
 
 
-})

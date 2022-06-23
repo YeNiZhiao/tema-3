@@ -18,6 +18,15 @@ module.exports = {
         'concert': ['Concert One', 'cursive']
       }
     },
+    keyframes: {
+      spinner: {
+        'from': { transform: 'rotate(0deg)' },
+        'to': { transform: 'rotate(360deg)' }
+      }
+    },
+    animation: {
+      'puter': 'spinner 1s ease linear infinite',
+    }
   },
   plugins: [],
 }

@@ -37,6 +37,10 @@
 
 <body class="bg-primary overflow-x-hidden">
     <div
+        class="music text-primary mactive shadow-lg bg-slate-800 rounded-full  fixed right-5 top-5 w-10 h-10 p-2 flex justify-center align-middle items-center fixed md:right-5 md:top-5  z-30 cursor-pointer">
+        <i class="music-icon self-center fas fa-play"></i>
+    </div>
+    <div
         class="md:fixed hidden md:flex justify-between w-9/12 bottom-2 text-center items-center z-40 left-1/2 text-sm -translate-x-1/2 mx-auto p-3 rounded-md bg-slate-800">
         <a class="page-scroll p-4  bg-slate-800 font-comfortaa list rounded-md  hover:bg-secondary transition-all duration-100  text-primary"
             href=".couple"><i class="fas fa-ring"></i> <br> Pasangan</a>
@@ -79,6 +83,7 @@
 
 
     </div>
+    <!-- cover -->
     <div class="fixed z-50 h-screen overflow-hidden cover bottom-0 p-2 top-0 left-0 right-0 bg-slate-800">
         <img src="img/elemen-11.png" data-aos="fade-up-right" class="absolute w-4/12 left-4" alt="">
         <div class="md:flex md:w-8/12 md:mx-auto h-screen align-middle items-center justify-center overflow-hidden">
@@ -122,6 +127,9 @@
             </div>
 
         </div>
+        <audio id="player" class="hidden" controls autoplay="autoplay" allow="autoplay" muted>
+            <source src="mp3/music.mp3" type="audio/mpeg">
+        </audio>
 
     </div>
     <div

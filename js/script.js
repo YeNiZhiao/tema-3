@@ -14,8 +14,8 @@ $(document).ready(function () {
             buka.addEventListener("click", function () {
                 $(".cover").addClass("hilang");
                 $('.fade-left').addClass("oke");
-                // $("#player").get(0).play();
-                // document.getElementById('player').muted = false;
+                $("#player").get(0).play();
+                document.getElementById('player').muted = false;
             })
             // burger
             $(".burger-button").on("click", function () {

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     Swal.fire({
         title: 'Nama Anda',
         input: 'text',
@@ -10,6 +11,7 @@ $(document).ready(function () {
         preConfirm: (nama) => {
             $(".nama").html(nama);
             AOS.init();
+
             var buka = document.querySelector(".buka");
             buka.addEventListener("click", function () {
                 $(".cover").addClass("hilang");
@@ -30,12 +32,14 @@ $(document).ready(function () {
                 $(".nav").toggleClass("pointer-events-none")
             })
             // save the date
-            $(".simpan").on("click", function () {
-                console.log($('.tanggal').html());
-                $('.tanggal').select();
-                navigator.clipboard.writeText($('.tanggal').html())
-                alert("Tanggal telah disalin")
-            })
+            // $(".simpan").on("click", function () {
+            //     console.log($('.tanggal').val());
+            //     $('.tanggal').select();
+            //     document.execCommand('copy');
+
+            //     // navigator.clipboard.writeText($('.tanggal').html())
+            //     alert("Tanggal telah disalin")
+            // })
 
             $(".collapse").on("click", function () {
                 $(this).siblings(".collapse-value").toggleClass("max-h-0");
